@@ -34,6 +34,8 @@
         
         p {
           margin-bottom: 20px;
+          margin-left: 20px;
+          margin-right: 20px;
         }
         
         ul {
@@ -50,10 +52,12 @@
         <h2>Data Scientist</h2>
       
         <h2>About Me</h2>
-        <p>Experienced in leveraging ML/AI, statistical analyses, and experimentation to improve performance, returns and insight generation across industries and research domains, including finance, marketing and cognitive science.
-            Ability to scope and lead data projects to completion, building and managing data science teams, and clearly communicating outcomes to stakeholders.
-            Expertise in engineering features and metrics, and training models to extract business value from data, taking charge of versioning and deployment.
-            Passionate about project management, R&D, ML engineering and public speaking.</p>
+        <p>
+          I’m a Data Scientist based in Trieste, Italy, passioned about the application of machine learning techniques and statistical methods to model cognitive processes, investment outcomes, and social phenomena.<br>
+          Experienced in leveraging ML/AI, statistical analyses, and experimentation to improve performance, returns and insight generation across industries and research domains, including finance, marketing and cognitive science.<br>
+          Ability to scope and lead data projects to completion, building and managing data science teams, and clearly communicating outcomes to stakeholders.<br>
+          Expertise in engineering features and metrics, and training models to extract business value from data, taking charge of versioning and deployment.<br>
+          Passionate about project management, R&D, ML engineering and public speaking.</p>
       
         <h2>Domains of Work Experience</h2>
         <ul>
@@ -81,6 +85,49 @@
             <p class="contact-email">Email: <a href="mailto:tiziano.suran@gmail.com">tiziano.suran@gmail.com</a></p>
           </div>
       
+
+
+          <section id="tech-stack">
+            <h2>Tech Stack</h2>
+            <div class="icon-container" id="icon-container"></div>
+          
+            <script>
+              // Array of tools with names and icon paths
+              var tools = [
+                { name: "Python", icon: "tech_stack/python.png" },
+                { name: "SQL", icon: "tech_stack/sql.png" },
+                { name: "Scikit-learn", icon: "tech_stack/scikit_learn.png" },
+                // Add more tools as needed
+              ];
+          
+              // Get the container element
+              var iconContainer = document.getElementById("icon-container");
+          
+              // Loop through the tools array and generate the icons
+              for (var i = 0; i < tools.length; i++) {
+                var tool = tools[i];
+          
+                // Create the icon element
+                var icon = document.createElement("div");
+                icon.className = "icon";
+          
+                // Create the icon image element
+                var iconImage = document.createElement("img");
+                iconImage.src = tool.icon;
+                iconImage.alt = tool.name;
+                icon.appendChild(iconImage);
+          
+                // Create the tool name element
+                var toolName = document.createElement("p");
+                toolName.textContent = tool.name;
+                icon.appendChild(toolName);
+          
+                // Append the icon to the container
+                iconContainer.appendChild(icon);
+              }
+            </script>
+          </section>
+          
         <!-- Add more sections as needed -->
       </div>
     </body>
