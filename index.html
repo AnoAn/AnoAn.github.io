@@ -68,45 +68,41 @@
       <p>
         I’m a Data Scientist based in Trieste, Italy, passioned about the
         application of machine learning techniques and statistical methods to
-        model cognitive processes, investment outcomes, and social phenomena.<br>
-        Experienced in leveraging ML/AI, statistical analyses, and
-        experimentation to improve performance, returns and insight generation
-        across industries and research domains, including finance, marketing and
-        cognitive science.<br>
-        Ability to scope and lead data projects to completion, building and
-        managing data science teams, and clearly communicating outcomes to
-        stakeholders.<br>
-        Expertise in engineering features and metrics, and training models to
-        extract business value from data, taking charge of versioning and
-        deployment.<br>
-        Passionate about project management, R&D, ML engineering and public
-        speaking.</p>
+        model investment opportunities and outcomes, social phenomena, and
+        cognitive processes.<br>
+        <ul>
+          <li>Experience in successfully leveraging ML/AI, statistics, and
+            software
+            development to enhance performance, amplify ROI, and uncover
+            actionable
+            insights.</li>
+          <li>Ability to scope and lead data projects to completion, building
+            and
+            managing data science teams, and clearly communicating outcomes to
+            stakeholders.</li>
+          <li>Passionate about project management, R&D, ML engineering and
+            presenting.
+          </li>
+        </ul>
 
-      <h2>Domains of Work Experience</h2>
-      <ul>
-        <li>Venture Capital</li>
-        <li>Market Research</li>
-        <li>Academic Research</li>
-      </ul>
-
-      <h2>Education</h2>
-      <ul>
-        <li>PhD in Cognitive Neuroscience, International School for Advanced
-          Studies (SISSA), 2019</li>
-        <li>MSc Applied Cognitive Psychology, University of Padova/Radboud
-          University Nijmegen, 2015</li>
-      </ul>
+        <h2>Education</h2>
+        <ul>
+          <li>PhD, Cognitive Neuroscience, International School for Advanced
+            Studies (SISSA), 2019</li>
+          <li>MSc, Applied Cognitive Psychology, University of Padova/Radboud
+            University Nijmegen, 2015</li>
+        </ul>
 
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container" id="skills-container"></div>
+        <section id="skills">
+          <h2>Main skills</h2>
+          <div class="skills-container" id="skills-container"></div>
 
-        <script>
+          <script>
           // Array of skills
           var skills = [
-            "Data Science", "Machine Learning", "AI", "Project Management", "ML Engineering",
-            "Statistics", "Experimentation", "Data Analysis", "Visualization", "Comunication",
+            "Data Science", "Machine Learning", "AI", "ML Engineering", "Software development", "Experimentation", "Project management", 
+            "Data Analysis", "Data Visualization", "Communication",
           ];
       
           // Get the skills container element
@@ -123,7 +119,7 @@
             skillsContainer.appendChild(skillElement);
           });
         </script>
-        <style>
+          <style>
           .skills-container {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -158,24 +154,24 @@
     }
   }
         </style>
-      </section>
+        </section>
 
 
 
-      <div class="contact-section">
-        <h2>Contact</h2>
-        <p class="contact-email">Email: <a
-            href="mailto:tiziano.suran@gmail.com">tiziano.suran@gmail.com</a></p>
-      </div>
+        <div class="contact-section">
+          <h2>Contact</h2>
+          <p class="contact-email">Email: <a
+              href="mailto:tiziano.suran@gmail.com">tiziano.suran@gmail.com</a></p>
+        </div>
 
 
 
-      <section class="tech" id="tech-stack">
-        <h2>Tech Stack</h2>
-        <p>(In no particular order)</p>
-        <div class="icon-container" id="icon-container"></div>
+        <section class="tech" id="tech-stack">
+          <h2>Tech Stack</h2>
+          <p>(In no particular order)</p>
+          <div class="icon-container" id="icon-container"></div>
 
-        <style>
+          <style>
           .tech p {
             text-align: center
           }
@@ -197,28 +193,34 @@
             margin-bottom: 10px;
           }
         </style>
-        <script>
+          <script>
               // Array of tools with names and icon paths
               var tech_images_path = "images/tech_stack"
               var tools = [
                 { name: "Python", icon: tech_images_path+"/python.png" },
+                { name: "Jupyter", icon: tech_images_path+"/jupyter.png" },
                 { name: "SQL", icon: tech_images_path+"/sql.png" },
-                { name: "Scikit-learn", icon: tech_images_path+"/scikit_learn.png" },
-                { name: "pandas", icon: tech_images_path+"/pandas.png" },
-                { name: "git", icon: tech_images_path+"/git.png" },
-                { name: "Tableau", icon: tech_images_path+"/tableau.png" },
-                { name: "PyTorch", icon: tech_images_path+"/pytorch.png" },
+                { name: "R", icon: tech_images_path+"/r.png" },
+                { name: "Git", icon: tech_images_path+"/git.png" },
                 { name: "VSCode", icon: tech_images_path+"/vscode.png" },
+                { name: "pandas", icon: tech_images_path+"/pandas.png" },
+                { name: "NumPy", icon: tech_images_path+"/numpy.png" },
+                { name: "SciPy", icon: tech_images_path+"/scipy.png" },
+                { name: "NetworkX", icon: tech_images_path+"/networkx.png" },
+                { name: "Scikit-learn", icon: tech_images_path+"/scikit_learn.png" },
+                { name: "XGBoost", icon: tech_images_path+"/xgboost.png" },
+                { name: "PyTorch", icon: tech_images_path+"/pytorch.png" },
+                { name: "TensorFlow", icon: tech_images_path+"/tensorflow.png" },
+                { name: "Keras", icon: tech_images_path+"/keras.png" },
+                { name: "MLflow", icon: tech_images_path+"/mlflow.png" },
+                { name: "DVC", icon: tech_images_path+"/dvc.png" },
                 { name: "PostgreSQL", icon: tech_images_path+"/postgres.png" },
                 { name: "MongoDB", icon: tech_images_path+"/mongodb.png" },
-                { name: "XGBoost", icon: tech_images_path+"/xgboost.png" },
-                { name: "NetworkX", icon: tech_images_path+"/networkx.png" },
-                { name: "DVC", icon: tech_images_path+"/dvc.png" },
                 { name: "Docker", icon: tech_images_path+"/docker.png" },
                 { name: "AWS S3", icon: tech_images_path+"/aws_s3.png" },
-                { name: "TansorFlow", icon: tech_images_path+"/tensorflow.png" },
-                { name: "SciPy", icon: tech_images_path+"/scipy.png" },
+                { name: "Tableau", icon: tech_images_path+"/tableau.png" },
                 { name: "Matplotlib", icon: tech_images_path+"/matplotlib.png" },
+                { name: "Grafana", icon: tech_images_path+"/grafana.png" },
                 // Add more tools as needed
               ];
           
@@ -253,9 +255,9 @@
                 }
               }
             </script>
-      </section>
+        </section>
 
-      <!-- Add more sections as needed -->
-    </div>
-  </body>
-</html>
+        <!-- Add more sections as needed -->
+      </div>
+    </body>
+  </html>
