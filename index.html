@@ -1,263 +1,394 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" href="images/SuranSymbol_ouroboros_cropped.ico"
-      type="image/x-icon">
-    <title>Tiziano Suran GitHub Page</title>
+
+<head>
+  <link rel="icon" href="images/SuranSymbol_ouroboros_cropped.ico" type="image/x-icon">
+  <title>Tiziano Suran GitHub Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #cde8f6, #82c0e4);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #333;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contact-section {
+      /* border: 5px solid; */
+      text-align: center;
+      /* margin: auto; */
+      /* width: 50%; */
+      /* padding: 10px; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
     <style>
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          background: linear-gradient(to bottom, #cde8f6, #82c0e4);
-        }
-        
-        .container {
-          max-width: 800px;
-          margin: 0 auto;
-          padding: 20px;
-          background-color: #fff;
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        h1, h2, h3, h4 {
-          color: #333;
-          text-align: center;
-          margin-top: 40px;
-        }
-        
-        p {
-          margin-bottom: 20px;
-          margin-left: 20px;
-          margin-right: 20px;
-        }
-        
-        ul {
-          list-style-type: disc;
-          margin-left: 20px;
-          margin-bottom: 20px;
-        }
+      .profile-picture {
+        display: block;
+        margin: 0 auto 20px;
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+      }
+    </style>
+    <img src="images/equation_profile_pic.jpg" alt="Profile Picture" class="profile-picture">
+    <h1>Tizi<u>ano</u> Sur<u>an</u>, Ph.D.</h1>
+    <h2>Lead Data Scientist</h2>
 
-        .contact-section {
-          /* border: 5px solid; */
-          text-align: center;
-          /* margin: auto; */
-          /* width: 50%; */
-          /* padding: 10px; */
-        }
-      </style>
-  </head>
-  <body>
-    <div class="container">
-      <style>
-        .profile-picture {
-          display: block;
-          margin: 0 auto 20px;
-          width: 200px;
-          height: auto;
-          border-radius: 50%;
-        }
-        </style>
-      <img src="images/equation_profile_pic.jpg" alt="Profile Picture"
-        class="profile-picture">
-      <h1>Tizi<u>ano</u> Sur<u>an</u>, Ph.D.</h1>
-      <h2>Lead Data Scientist</h2>
-
+    <section id="about">
       <h2>About Me</h2>
-      <p>
+      <p class="about-text">
         I’m a Data Scientist based in Trieste, Italy, applying machine learning
         techniques, software development best practices and project management
-        to build data products and extract value from data across domains.<br>
-        <ul>
-          <li>Experience in successfully leveraging ML/AI, statistics, and
-            software
-            development to enhance performance, amplify ROI, and uncover
-            actionable
-            insights.</li>
-          <li>Ability to scope and lead data projects to completion, building
-            and
-            managing data science teams, and clearly communicating outcomes to
-            stakeholders.</li>
-          <li>Passionate about project management, AI explainability, ML
-            engineering
-            and delivering effective presentations.
-          </li>
-        </ul>
+        to build data products and extract value from data across domains.
+      </p>
+      <ul class="about-list">
+        <li>Experience in successfully leveraging ML/AI, statistics, and
+          software
+          development to enhance performance, amplify ROI, and uncover
+          actionable
+          insights.</li>
+        <li>Ability to scope and lead data projects to completion, building
+          and
+          managing data science teams, and clearly communicating outcomes to
+          stakeholders.</li>
+        <li>Passionate about project management, AI explainability, ML
+          engineering
+          and delivering effective presentations.
+        </li>
+      </ul>
+      <style>
+        /* Define the styles for the about section */
+        #about {
+          margin: 50px 0;
+        }
 
-        <h2>Education</h2>
-        <ul>
-          <li>PhD, Cognitive Neuroscience, International School for Advanced
-            Studies (SISSA), 2019</li>
-          <li>MSc, Applied Cognitive Psychology, University of Padova/Radboud
-            University Nijmegen, 2015</li>
-        </ul>
+        /* Define the styles for the about text */
+        .about-text {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 18px;
+          line-height: 1.5;
+          color: #333;
+        }
 
+        /* Define the styles for the about list */
+        .about-list {
+          margin-top: 20px;
+          padding-left: 20px;
+          list-style: disc;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 18px;
+          line-height: 1.5;
+          color: #333;
+        }
 
-        <section id="skills">
-          <h2>Main skills</h2>
-          <div class="skills-container" id="skills-container"></div>
+        /* Define the styles for the about list items */
+        .about-list li {
+          margin-bottom: 10px;
+        }
+      </style>
+    </section>
 
-          <script>
-          // Array of skills
-          var skills = [
-            "Data Science", "Machine Learning", "AI", "ML Engineering", "Software development", "Experimentation", "Project management", 
-            "Data Analysis", "Data Visualization", "Communication",
-          ];
-      
-          // Get the skills container element
-          var skillsContainer = document.getElementById("skills-container");
-      
-          // Loop through the skills array and generate the skill elements
-          skills.forEach(function(skill) {
-            // Create the skill element
-            var skillElement = document.createElement("div");
-            skillElement.className = "skill";
-            skillElement.textContent = skill;
-      
-            // Append the skill element to the container
-            skillsContainer.appendChild(skillElement);
-          });
-        </script>
-          <style>
-          .skills-container {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-gap: 15px;
-            justify-items: center;
-            margin-top: 10px;
-            margin-right: 10px;
-            margin-left: 10px;
-          }
-      
-          .skill {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 25px;
-            background-color: lightblue;
-            border-radius: 5px;
-            /* margin-right: 10px; */
-            padding: 8px;
-          }
-
-          /* Media queries for responsive layout */
-  @media (max-width: 768px) {
-    .skills-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (max-width: 480px) {
-    .skills-container {
-      grid-template-columns: 1fr;
-    }
-  }
-        </style>
-        </section>
-
-
-
-        <div class="contact-section">
-          <h2>Contact</h2>
-          <p class="contact-email">Email: <a
-              href="mailto:tiziano.suran@gmail.com">tiziano.suran@gmail.com</a></p>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-container">
+        <div class="education-item">
+          <h3>PhD, Cognitive Neuroscience</h3>
+          <p class="education-details">
+            <a href="https://www.sissa.it/" target="_blank">International School for Advanced
+              Studies (SISSA)</a>
+          </p>
         </div>
-
-
-
-        <section class="tech" id="tech-stack">
-          <h2>Tech Stack</h2>
-          <p>(In no particular order)</p>
-          <div class="icon-container" id="icon-container"></div>
-
-          <style>
-          .tech p {
-            text-align: center
-          }
-
-          .icon-container {
-            text-align: center;
-          }
-          .icon {
-            display: inline-block;
-            text-align: center;
-            margin-right: 20px;
-            margin-bottom: 20px;
-          }
-      
-          .icon img {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
-            margin-bottom: 10px;
-          }
-        </style>
-          <script>
-              // Array of tools with names and icon paths
-              var tech_images_path = "images/tech_stack"
-              var tools = [
-                { name: "Python", icon: tech_images_path+"/python.png" },
-                { name: "Jupyter", icon: tech_images_path+"/jupyter.png" },
-                { name: "SQL", icon: tech_images_path+"/sql.png" },
-                { name: "R", icon: tech_images_path+"/r.png" },
-                { name: "Git", icon: tech_images_path+"/git.png" },
-                { name: "VSCode", icon: tech_images_path+"/vscode.png" },
-                { name: "pandas", icon: tech_images_path+"/pandas.png" },
-                { name: "NumPy", icon: tech_images_path+"/numpy.png" },
-                { name: "SciPy", icon: tech_images_path+"/scipy.png" },
-                { name: "NetworkX", icon: tech_images_path+"/networkx.png" },
-                { name: "Scikit-learn", icon: tech_images_path+"/scikit_learn.png" },
-                { name: "XGBoost", icon: tech_images_path+"/xgboost.png" },
-                { name: "PyTorch", icon: tech_images_path+"/pytorch.png" },
-                { name: "TensorFlow", icon: tech_images_path+"/tensorflow.png" },
-                { name: "Keras", icon: tech_images_path+"/keras.png" },
-                { name: "MLflow", icon: tech_images_path+"/mlflow.png" },
-                { name: "DVC", icon: tech_images_path+"/dvc.png" },
-                { name: "PostgreSQL", icon: tech_images_path+"/postgres.png" },
-                { name: "MongoDB", icon: tech_images_path+"/mongodb.png" },
-                { name: "Docker", icon: tech_images_path+"/docker.png" },
-                { name: "AWS S3", icon: tech_images_path+"/aws_s3.png" },
-                { name: "Tableau", icon: tech_images_path+"/tableau.png" },
-                { name: "Matplotlib", icon: tech_images_path+"/matplotlib.png" },
-                { name: "Grafana", icon: tech_images_path+"/grafana.png" },
-                // Add more tools as needed
-              ];
-          
-              // Get the container element
-              var iconContainer = document.getElementById("icon-container");
-
-              // Loop through the tools array and generate the icons
-              for (var i = 0; i < tools.length; i++) {
-                var tool = tools[i];
-
-                // Create the icon element
-                var icon = document.createElement("div");
-                icon.className = "icon";
-
-                // Create the icon image element
-                var iconImage = document.createElement("img");
-                iconImage.src = tool.icon;
-                iconImage.alt = tool.name;
-                icon.appendChild(iconImage);
-
-                // Create the tool name element
-                var toolName = document.createElement("p");
-                toolName.textContent = tool.name;
-                icon.appendChild(toolName);
-
-                // Append the icon to the container
-                iconContainer.appendChild(icon);
-
-                // Add a line break after every third icon
-                if ((i + 1) % 5 === 0) {
-                  iconContainer.appendChild(document.createElement("br"));
-                }
-              }
-            </script>
-        </section>
-
-        <!-- Add more sections as needed -->
+        <div class="education-item">
+          <h3>MSc, Applied Cognitive Psychology</h3>
+          <p class="education-details">
+            <a href="https://www.unipd.it/" target="_blank">University of Padova</a><br>
+            <a href="https://www.ru.nl/" target="_blank">Radboud University Nijmegen</a>
+          </p>
+        </div>
       </div>
-    </body>
-  </html>
+
+
+      <style>
+        /* Define the styles for the education section */
+        #education {
+          margin: 50px 0;
+        }
+
+        /* Define the styles for the education container */
+        .education-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        /* Define the styles for the education items */
+        .education-item {
+          width: 45%;
+          margin-bottom: 20px;
+          padding: 20px;
+          background-color: #f2f2f2;
+          border-radius: 5px;
+          text-align: center;
+        }
+
+        /* Define the styles for the education item headings */
+        .education-item h3 {
+          margin-top: 0;
+          margin-bottom: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          color: #333;
+        }
+
+        /* Define the styles for the education item details */
+        .education-details {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          color: #333;
+        }
+
+        /* Define the styles for the education item links */
+        .education-details a {
+          color: #333;
+          text-decoration: none;
+        }
+
+        /* Define the styles for the education item link hover state */
+        .education-details a:hover {
+          text-decoration: underline;
+        }
+      </style>
+    </section>
+
+    <section id="skills">
+      <h2>Main skills</h2>
+      <!-- Add a CSS class for the skills container -->
+      <div class="skills-container" id="skills-container"></div>
+
+      <script>
+        // Array of skills
+        // Array of skills with corresponding Wikipedia URLs
+        var skills = [
+          { name: "Data Science", url: "https://en.wikipedia.org/wiki/Data_science" },
+          { name: "Machine Learning", url: "https://en.wikipedia.org/wiki/Machine_learning" },
+          { name: "AI", url: "https://en.wikipedia.org/wiki/Artificial_intelligence" },
+          { name: "ML Engineering", url: "https://en.wikipedia.org/wiki/Machine_learning_engineering" },
+          { name: "Software development", url: "https://en.wikipedia.org/wiki/Software_development" },
+          { name: "Experimentation", url: "https://en.wikipedia.org/wiki/Experiment" },
+          { name: "Project management", url: "https://en.wikipedia.org/wiki/Project_management" },
+          { name: "Data Analysis", url: "https://en.wikipedia.org/wiki/Data_analysis" },
+          { name: "Data Visualization", url: "https://en.wikipedia.org/wiki/Data_visualization" },
+          { name: "Communication", url: "https://en.wikipedia.org/wiki/Communication" },
+        ];
+
+        // Get the skills container element
+        var skillsContainer = document.getElementById("skills-container");
+
+        // Loop through the skills array and generate the skill elements
+        skills.forEach(function (skill) {
+          // Create the skill element
+          var skillElement = document.createElement("div");
+          skillElement.className = "skill";
+          var skillLink = document.createElement("a");
+          skillLink.href = skill.url;
+          skillLink.target = "_blank"; // Add the target="_blank" attribute to open the link in a new tab
+          skillLink.textContent = skill.name;
+          skillElement.appendChild(skillLink);
+
+          // Append the skill element to the container
+          skillsContainer.appendChild(skillElement);
+        });
+      </script>
+
+      <style>
+        /* Define the styles for the skills container */
+        .skills-container {
+          display: grid;
+          grid-gap: 15px;
+          justify-items: center;
+          margin: 10px;
+        }
+
+        /* Define the styles for the skill elements */
+        .skill {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 25px;
+          background-color: lightblue;
+          border-radius: 5px;
+          padding: 8px;
+        }
+
+        /* Define the styles for the skill links */
+        .skill a {
+          color: #333;
+          text-decoration: none;
+        }
+
+        /* Define the styles for the skill link hover state */
+        .skill a:hover {
+          text-decoration: underline;
+        }
+
+        /* Adjust the number of columns based on the screen size */
+        @media screen and (min-width: 768px) {
+          .skills-container {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        @media screen and (min-width: 992px) {
+          .skills-container {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+
+        @media screen and (min-width: 1200px) {
+          .skills-container {
+            grid-template-columns: repeat(5, 1fr);
+          }
+        }
+      </style>
+    </section>
+
+
+
+    <div class="contact-section">
+      <h2>Contact</h2>
+      <p class="contact-email">Email: <a href="mailto:tiziano.suran@gmail.com">tiziano.suran@gmail.com</a></p>
+    </div>
+
+
+
+    <section class="tech" id="tech-stack">
+      <h2>Tech Stack</h2>
+      <p>(In no particular order)</p>
+      <div class="icon-container" id="icon-container"></div>
+
+      <style>
+        .tech p {
+          text-align: center
+        }
+
+        .icon-container {
+          text-align: center;
+        }
+
+        .icon {
+          display: inline-block;
+          text-align: center;
+          margin-right: 20px;
+          margin-bottom: 20px;
+        }
+
+        .icon img {
+          width: 80px;
+          height: 80px;
+          object-fit: contain;
+          margin-bottom: 10px;
+        }
+      </style>
+      <script>
+        // Array of tools with names and icon paths
+        var tech_images_path = "images/tech_stack"
+        var tools = [
+          { name: "Python", icon: tech_images_path + "/python.png" },
+          { name: "Jupyter", icon: tech_images_path + "/jupyter.png" },
+          { name: "SQL", icon: tech_images_path + "/sql.png" },
+          { name: "R", icon: tech_images_path + "/r.png" },
+          { name: "Git", icon: tech_images_path + "/git.png" },
+          { name: "VSCode", icon: tech_images_path + "/vscode.png" },
+          { name: "pandas", icon: tech_images_path + "/pandas.png" },
+          { name: "NumPy", icon: tech_images_path + "/numpy.png" },
+          { name: "SciPy", icon: tech_images_path + "/scipy.png" },
+          { name: "NetworkX", icon: tech_images_path + "/networkx.png" },
+          { name: "Scikit-learn", icon: tech_images_path + "/scikit_learn.png" },
+          { name: "XGBoost", icon: tech_images_path + "/xgboost.png" },
+          { name: "PyTorch", icon: tech_images_path + "/pytorch.png" },
+          { name: "TensorFlow", icon: tech_images_path + "/tensorflow.png" },
+          { name: "Keras", icon: tech_images_path + "/keras.png" },
+          { name: "MLflow", icon: tech_images_path + "/mlflow.png" },
+          { name: "DVC", icon: tech_images_path + "/dvc.png" },
+          { name: "PostgreSQL", icon: tech_images_path + "/postgres.png" },
+          { name: "MongoDB", icon: tech_images_path + "/mongodb.png" },
+          { name: "Docker", icon: tech_images_path + "/docker.png" },
+          { name: "AWS S3", icon: tech_images_path + "/aws_s3.png" },
+          { name: "Tableau", icon: tech_images_path + "/tableau.png" },
+          { name: "Matplotlib", icon: tech_images_path + "/matplotlib.png" },
+          { name: "Grafana", icon: tech_images_path + "/grafana.png" },
+          // Add more tools as needed
+        ];
+
+        // Get the container element
+        var iconContainer = document.getElementById("icon-container");
+
+        // Loop through the tools array and generate the icons
+        for (var i = 0; i < tools.length; i++) {
+          var tool = tools[i];
+
+          // Create the icon element
+          var icon = document.createElement("div");
+          icon.className = "icon";
+
+          // Create the icon image element
+          var iconImage = document.createElement("img");
+          iconImage.src = tool.icon;
+          iconImage.alt = tool.name;
+          icon.appendChild(iconImage);
+
+          // Create the tool name element
+          var toolName = document.createElement("p");
+          toolName.textContent = tool.name;
+          icon.appendChild(toolName);
+
+          // Append the icon to the container
+          iconContainer.appendChild(icon);
+
+          // Add a line break after every third icon
+          if ((i + 1) % 5 === 0) {
+            iconContainer.appendChild(document.createElement("br"));
+          }
+        }
+      </script>
+    </section>
+
+    <!-- Add more sections as needed -->
+  </div>
+</body>
+
+</html>
