@@ -21,6 +21,6 @@ Equation AG - München, Germany
 SWG SpA & Rachael srl - Trieste, Italy
 
 ## Education
-- Ph.D,, Cognitive Neuroscience, International School for Advanced Studies (SISSA), Italy (_2019_)
+- Ph.D., Cognitive Neuroscience, International School for Advanced Studies (SISSA), Italy (_2019_)
 - M.Sc., Applied Cognitive Psychology, University of Padova/Radboud University Nijmegen (_2015_)  
 
